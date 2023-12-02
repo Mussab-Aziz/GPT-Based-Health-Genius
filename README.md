@@ -1,3 +1,5 @@
 # GPT-Based-Health-Genius
-GPT Based Health Genius is the name of my semester project. It is a program that allows users to enter their weight and height, and then provides them with health advice and diet plans using chatgpt.
-Do not forget to Setup up your API key in Line 40 |Api_key = "YOUR API KEY"|
+
+The code is a health care system utilizing the OpenAI API to provide personalized health advice and guidance based on a user's Body Mass Index (BMI). It includes functions for calculating BMI, generating health advice, suggesting fitness goals, creating diet plans, proposing workout plans, and offering meditation guides. The user interacts with the system through a menu, inputting their choice to receive relevant information or recommendations. The code emphasizes user-specific health guidance, making use of the OpenAI API for natural language processing.
+
+Do not forget to Setup up your API key |Api_key = "YOUR API KEY"|
