@@ -7,7 +7,7 @@ def make_openai_request(prompt, api_key):
     response = openai.Completion.create(
         engine="gpt-3.5-turbo-instruct",
         prompt=prompt,
-        max_tokens=100
+        max_tokens=500
     )
     return response.choices[0].text.strip()
 
@@ -37,7 +37,7 @@ def diet_plan(api_key, bmi):
     print(f'\nDiet Plan: {response}')
 
 if __name__ == "__main__":
-    api_key = "YOUR API KEY"
+    api_key = "Your API Key"
     bmi = 0
 
     while True:
@@ -52,11 +52,11 @@ if __name__ == "__main__":
         if choice == 1:
             bmi = calculate_bmi()
         elif choice == 2:
+            print("Generating Health Advice....")
             health_advice(api_key, bmi)
-            print("Writing Health Advice....")
         elif choice == 3:
-            set_goal(api_key, bmi)
             print("Setting a Goal....")
+            set_goal(api_key, bmi)
         elif choice == 4:
             print("Creating a diet plan....")
             diet_plan(api_key, bmi)
